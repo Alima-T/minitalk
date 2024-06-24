@@ -6,7 +6,7 @@
 /*   By: aokhapki <aokhapki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 17:57:44 by aokhapki          #+#    #+#             */
-/*   Updated: 2024/06/22 19:27:53 by aokhapki         ###   ########.fr       */
+/*   Updated: 2024/06/24 23:25:10 by aokhapki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	send_symbol(pid_t pid, char ch)
 			kill(pid, SIGUSR2);
 		else
 			kill(pid, SIGUSR1);
-		usleep(1000);
+		usleep(300);
 	}
 }
 
